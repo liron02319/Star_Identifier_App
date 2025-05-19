@@ -10,7 +10,10 @@
 - In This project 
 - In addition, the
 - 
-![Funny GIF](https://i.imgflip.com/9ujo5o.gif)
+![GIF1](https://i.imgflip.com/9ujo5o.gif)
+
+![GIF2](https://i.imgflip.com/9ujpdh.gif)
+
 
 ![c7ded1a1-d89c-4a12-af1c-85a4b8bafaee](https://github.com/user-attachments/assets/da77481d-3e0a-49ce-88c5-406f99e0129d)
 
