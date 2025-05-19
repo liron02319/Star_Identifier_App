@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         videoMenu=findViewById(R.id.videoMenu);
+
         String path="android.resource://" + getPackageName() + "/" + R.raw.together;
         Uri uri=Uri.parse(path);
         videoMenu.setVideoURI(uri);
@@ -52,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+
+
 
 
     }
