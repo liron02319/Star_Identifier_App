@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         videoMenu=findViewById(R.id.videoMenu);
 
-        String path="android.resource://" + getPackageName() + "/" + R.raw.together;
+        String path="android.resource://" + getPackageName() + "/" + R.raw.together2;
         Uri uri=Uri.parse(path);
         videoMenu.setVideoURI(uri);
 /*
