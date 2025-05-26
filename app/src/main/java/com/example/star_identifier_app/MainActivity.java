@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    VideoView videoMenu;
+    VideoView videoMenuScreenPage;
     MediaPlayer mMediaPlayer;
     private Button signIn, signUp;
 
@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        videoMenu=findViewById(R.id.videoMenu);
+        videoMenuScreenPage=findViewById(R.id.videoMenuScreenPage);
 
-        String path="android.resource://" + getPackageName() + "/" + R.raw.together2;
+        String path="android.resource://" + getPackageName() + "/" + R.raw.video_main_screen;
         Uri uri=Uri.parse(path);
-        videoMenu.setVideoURI(uri);
+        videoMenuScreenPage.setVideoURI(uri);
 /*
         videoMenu.setOnErrorListener(new MediaPlayer.OnErrorListener() {
             @Override
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 return true; // Important! Return true to suppress system dialog.
             }
         });*/
-        videoMenu.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        videoMenuScreenPage.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mp) {
                 mMediaPlayer=mp;

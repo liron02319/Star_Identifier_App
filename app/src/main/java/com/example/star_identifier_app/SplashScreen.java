@@ -9,14 +9,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreen extends AppCompatActivity {
 
+    VideoView videoView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        VideoView videoView = findViewById(R.id.videoSplashScreen);
+        videoView = findViewById(R.id.videoSplashScreenLogo);
 
-        Uri video = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.test2);
+        Uri video = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.splash_loading_logo);
         videoView.setVideoURI(video);
 
         videoView.setOnCompletionListener(mp -> {
