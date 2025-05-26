@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 
     <application
         android:allowBackup="true"
@@ -13,6 +17,27 @@
         android:theme="@style/Theme.Star_Identifier_App"
         tools:targetApi="31">
         <activity
+            android:name=".view.CoordinatesConverter"
+            android:exported="false" />
+        <activity
+            android:name=".view.Home"
+            android:exported="false" />
+        <activity
+            android:name=".view.MoreInformation"
+            android:exported="false" />
+        <activity
+            android:name=".view.SimbadNameStar"
+            android:exported="false" />
+        <activity
+            android:name=".view.SimbadRequestTask"
+            android:exported="false" />
+        <activity
+            android:name=".view.Star"
+            android:exported="false" />
+        <activity
+            android:name=".view.StarsAdapter"
+            android:exported="false" />
+        <activity
             android:name=".view.SplashScreen"
             android:exported="true">
             <intent-filter>
@@ -21,12 +46,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".view.MainActivity"
             android:exported="true" />
-
-
     </application>
 
 </manifest>

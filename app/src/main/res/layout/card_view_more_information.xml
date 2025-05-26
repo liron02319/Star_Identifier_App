@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/grey"
+                android:padding="8dp">
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cartStarMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="16dp"
+                android:background="@color/grey"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tvStarName"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="שם כוכב" />
+                <TextView
+                    android:id="@+id/tvStarClarity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="בהירות כוכב"/>
+
+                <TextView
+                    android:id="@+id/tvStarMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="מידע נוסף"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
