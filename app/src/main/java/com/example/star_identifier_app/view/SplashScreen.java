@@ -1,4 +1,4 @@
-package com.example.star_identifier_app;
+package com.example.star_identifier_app.view;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.star_identifier_app.R;
 
 public class SplashScreen extends AppCompatActivity {
 

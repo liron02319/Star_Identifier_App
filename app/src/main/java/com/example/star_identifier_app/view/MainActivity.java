@@ -1,4 +1,4 @@
-package com.example.star_identifier_app;
+package com.example.star_identifier_app.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.VideoView;
+
+import com.example.star_identifier_app.R;
 
 public class MainActivity extends AppCompatActivity {
 
