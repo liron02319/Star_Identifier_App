@@ -9,78 +9,74 @@ import com.example.star_identifier_app.R;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Star implements Parcelable {
-    String name;
-    String ra;
-    String dec;
+import java.util.Objects;
 
-    public Star(String name, String ra, String dec) {
+public class Star {
+    private final String name;
+    private final float x;
+    private final float y;
+
+    public Star(String name, float x, float y) {
         this.name = name;
-        this.ra = ra;
-        this.dec = dec;
+        this.x = x;
+        this.y = y;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public float getX() {
+        return x;
     }
 
-    public String getRa() {
-        return ra;
+    public float getY() {
+        return y;
     }
 
-    public void setRa(String ra) {
-        this.ra = ra;
+    public Star copy(String name, float x, float y) {
+        return new Star(name, x, y);
     }
 
-    public String getDec() {
-        return dec;
+    public Star copy() {
+        return new Star(this.name, this.x, this.y);
     }
 
-    public void setDec(String dec) {
-        this.dec = dec;
+    // Component functions for destructuring (Kotlin data class feature)
+    public String component1() {
+        return name;
+    }
+
+    public float component2() {
+        return x;
+    }
+
+    public float component3() {
+        return y;
     }
 
     @Override
     public String toString() {
-        return "Star{" +
-                "name='" + name + '\'' +
-                ", ra='" + ra + '\'' +
-                ", dec='" + dec + '\'' +
-                '}';
+        return "Star(name=" + name + ", x=" + x + ", y=" + y + ")";
     }
 
     @Override
-    public int describeContents() {
-        return 0;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Star star = (Star) obj;
+        return Float.compare(star.x, x) == 0 &&
+                Float.compare(star.y, y) == 0 &&
+                Objects.equals(name, star.name);
     }
-
 
     @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(name);
-        parcel.writeString(ra);
-        parcel.writeString(dec);
+    public int hashCode() {
+        return Objects.hash(name, x, y);
     }
-
-    protected Star(Parcel in) {
-        name = in.readString();
-        ra = in.readString();
-        dec = in.readString();
-    }
-    public static final Parcelable.Creator<Star> CREATOR = new Parcelable.Creator<Star>() {
-        @Override
-        public Star createFromParcel(Parcel in) {
-            return new Star(in);
-        }
-
-        @Override
-        public Star[] newArray(int size) {
-            return new Star[size];
-        }
-    };
-
 }
+
+
+
+
+

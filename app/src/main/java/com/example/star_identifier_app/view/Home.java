@@ -47,7 +47,7 @@ import android.widget.VideoView;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
 public class Home extends AppCompatActivity {
 
     Button btnCamera, btnGallery;
@@ -387,3 +387,6 @@ public class Home extends AppCompatActivity {
 
 
 }
+
+
+ */

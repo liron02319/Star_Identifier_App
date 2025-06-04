@@ -18,7 +18,7 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
 public class MoreInformation extends AppCompatActivity {
 
 
@@ -121,3 +121,5 @@ public class MoreInformation extends AppCompatActivity {
 
 
 }
+
+ */

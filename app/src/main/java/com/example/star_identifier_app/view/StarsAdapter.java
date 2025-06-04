@@ -17,7 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-
+/*
 public class StarsAdapter extends RecyclerView.Adapter<StarsAdapter.StarsAdapterHolder>{
     Context context;
     List<Star> Stars;
@@ -66,3 +66,4 @@ public class StarsAdapter extends RecyclerView.Adapter<StarsAdapter.StarsAdapter
         }
     }
 }
+ */

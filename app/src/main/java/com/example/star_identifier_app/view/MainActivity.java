@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Logging in...", Toast.LENGTH_SHORT).show();
 
                 // Example: open another activity
-                Intent intent = new Intent(MainActivity.this, Home.class);
+                Intent intent = new Intent(MainActivity.this, Home2.class);
                 startActivity(intent);
 
                 // Or you can run a login check here

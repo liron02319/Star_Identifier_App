@@ -22,6 +22,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+
+/*
 public class SimbadRequestTask extends AsyncTask<Void, Void, String> {
     private String latitude;
     private String longitude;
@@ -157,3 +160,4 @@ public class SimbadRequestTask extends AsyncTask<Void, Void, String> {
         void onTaskComplete(List<Star> starList);
     }
 }
+*/
