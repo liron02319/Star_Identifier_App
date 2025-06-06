@@ -16,10 +16,26 @@ public class Star {
     private final float x;
     private final float y;
 
-    public Star(String name, float x, float y) {
+    private final double RA;
+
+    private final double DEC;
+
+
+    public Star(String name, float x, float y ,double RA ,double DEC) {
         this.name = name;
         this.x = x;
         this.y = y;
+        this.RA = RA;
+        this.DEC = DEC;
+
+    }
+
+    public double getRA() {
+        return RA;
+    }
+
+    public double getDEC() {
+        return DEC;
     }
 
     public String getName() {
@@ -34,12 +50,12 @@ public class Star {
         return y;
     }
 
-    public Star copy(String name, float x, float y) {
-        return new Star(name, x, y);
+    public Star copy(String name, float x, float y, double RA , double DEC) {
+        return new Star(name, x, y, RA, DEC);
     }
 
     public Star copy() {
-        return new Star(this.name, this.x, this.y);
+        return new Star(this.name, this.x, this.y, this. RA , this. DEC) ;
     }
 
     // Component functions for destructuring (Kotlin data class feature)

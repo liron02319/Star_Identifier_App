@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 
 import com.example.star_identifier_app.R;
@@ -63,6 +64,8 @@ public class Home2 extends AppCompatActivity {
      Button btnCamera;
      Button btnGallery;
 
+    ListView starListView;
+
     VideoView videoViewStarGif;
 
     private Uri cameraPhotoUri = null;
@@ -97,6 +100,8 @@ public class Home2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
+
+        starListView = findViewById(R.id.starListView);
 
         videoViewStarGif = findViewById(R.id.videoGifScreenLogoStar);
 
@@ -216,6 +221,10 @@ public class Home2 extends AppCompatActivity {
                     progressBar.setVisibility(View.GONE);
                     btnCamera.setEnabled(true);
                     btnGallery.setEnabled(true);
+
+                    StarAdapter adapter = new StarAdapter(Home2.this, stars);
+                    starListView.setAdapter(adapter);
+                    starListView.setVisibility(View.VISIBLE);
                 });
 
             } catch (Exception e) {
@@ -313,7 +322,10 @@ public class Home2 extends AppCompatActivity {
                 String name = starObj.getString("name");
                 float x = (float) starObj.getDouble("x");
                 float y = (float) starObj.getDouble("y");
-                resultList.add(new Star(name, x, y));
+                double RA =  starObj.getDouble("ra");
+                double DEC = starObj.getDouble("dec");
+
+                resultList.add(new Star(name, x, y,RA,DEC));
             }
         } catch (JSONException e) {
             throw new Exception("JSON parsing error", e);

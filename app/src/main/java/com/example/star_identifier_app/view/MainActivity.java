@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     VideoView videoMenuScreenPage;
     MediaPlayer mMediaPlayer;
-    private Button signIn, signUp;
+    private Button signIn  , info;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,16 +33,29 @@ public class MainActivity extends AppCompatActivity {
 
         videoMenuScreenPage=findViewById(R.id.videoMenuScreenPage);
         signIn=findViewById(R.id.buttonMainLogIn);
+        info=findViewById(R.id.buttonMainInfo);
 
 
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Show a loading spinner here, or move to another screen
-                Toast.makeText(getApplicationContext(), "Logging in...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Welcome!", Toast.LENGTH_SHORT).show();
 
                 // Example: open another activity
                 Intent intent = new Intent(MainActivity.this, Home2.class);
+                startActivity(intent);
+
+                // Or you can run a login check here
+            }
+        });
+
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // Example: open another activity
+                Intent intent = new Intent(MainActivity.this, Info.class);
                 startActivity(intent);
 
                 // Or you can run a login check here

@@ -31,7 +31,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/take_photo"
-        android:background="#1ad8fc"
+
+        android:background="@drawable/round_border1"
+
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/tvIntro"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +47,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/choose_gallery"
-        android:background="#aa2caa"
+        android:background="@drawable/round_border2"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/btnCamera"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,13 +74,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:adjustViewBounds="true"
-        android:scaleType="centerInside"
         android:contentDescription="@string/image_content_desc"
         android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/progressBar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnGallery"
+        app:layout_constraintBottom_toTopOf="@id/starListView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <VideoView
@@ -92,5 +93,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageViewd"
         app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/starListView"
+        android:layout_width="349dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="300dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/btnGallery"
+        tools:layout_editor_absoluteX="41dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

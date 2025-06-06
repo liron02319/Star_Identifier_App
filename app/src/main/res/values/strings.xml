@@ -1,12 +1,28 @@
 <resources>
     <string name="app_name">Star Identifier</string>
 
-
-    <string name="intro_text">Welcome! You can take a new photo or choose one from your gallery to detect stars in the image.</string>
+    <string name="intro_text">Welcome!\n
+        You can take a new photo or choose one from your gallery to detect stars in the image.</string>
     <string name="take_photo">Take Photo</string>
     <string name="choose_gallery">Choose from Gallery</string>
     <string name="image_content_desc">Annotated photo with detected stars</string>
 
+
+
+    <string name="AboutTheApp">
+THAT ATTTTTTTTTTTTTTTTTTTTTTTTTTTT
+    </string>
+
+
+    <string name="HowToDetectStars">
+HAT ATTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+    </string>
+
+    <string name="MoreInformation">
+HAT ATTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+    </string>
 
 
 

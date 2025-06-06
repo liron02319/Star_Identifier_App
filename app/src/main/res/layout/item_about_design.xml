@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="click me here"
+            android:id="@+id/title"
+            android:padding="15dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/rl_title_line">
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:visibility="gone"
+            android:gravity="right"
+            android:id="@+id/description"
+            android:padding="15dp"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/rl_description_line"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AboutTheApp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/whatIsMesamchimABOUT"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/HowToDetectStars"
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/DetailAppABOUT"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                android:textColor="@color/white">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/MoreInformation"
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/ContactUsABOUT"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
