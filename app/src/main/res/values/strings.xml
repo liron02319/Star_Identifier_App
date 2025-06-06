@@ -10,19 +10,52 @@
 
 
     <string name="AboutTheApp">
-THAT ATTTTTTTTTTTTTTTTTTTTTTTTTTTT
+🌟 Welcome to the Star Detector App! 🌟
+        \n
+\nThis app helps you identify stars in the night sky using an image of the stars.
+\nYou can upload your own image or capture one from the internet — and we’ll do the rest!
+\n
+\n🌌 If you love astronomy or just want to know🌌\n
+        “What star is that?”\n
+        this app is for you!
+
+
+  \n
+        \n
+  \n🌟 What the App Does: 🌟
+        \n
+  \n🌌Detects stars in an image🌌
+  \nThe app finds bright spots in your photo that are likely stars.
+\n
+  \n🌌Finds the real sky coordinates🌌
+  \nIt uses Astrometry.net to figure out where in the sky each star is located (RA/DEC) .
+\n
+\n🌌Gets star names🌌
+\nIt looks up each star’s name using the SIMBAD astronomical database.
+\n
+\n🌌Shows results and annotations🌌
+\nYou’ll get a list of star names and their locations, and a version of the image labeled with this info.
+
+
     </string>
 
 
     <string name="HowToDetectStars">
-HAT ATTTTTTTTTTTTTTTTTTTTTTTTTTTT
+🌟There are two buttons:🌟
+\n
+\n🌌Upload Image – Choose a photo of the stars from your device.
+        \n
+\n🌌Use Online Image – Get an image From Your own Camera.
 
     </string>
+
 
     <string name="MoreInformation">
-HAT ATTTTTTTTTTTTTTTTTTTTTTTTTTTT
+    🌟 For source code, technical details, and updates,\n\n
+    Visit\n
+https://github.com/liron02319/Star_Identifier_App
 
-    </string>
+</string>
 
 
 

@@ -49,6 +49,9 @@ public class Info extends AppCompatActivity {
         arrayList.add(new AboutDescription("How To Detect Stars",getString(R.string.HowToDetectStars),false));
         arrayList.add(new AboutDescription("More Information",getString(R.string.MoreInformation),false));
 
+
+
+
         adapter=new AboutAdapter(arrayList,Info.this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
