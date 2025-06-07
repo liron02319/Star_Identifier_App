@@ -49,9 +49,9 @@
 
       
    
-## 📸 How to Use:
+## How to Use:
 **There are two buttons:**   
-
+📸
 - **Upload Image** – Choose a photo of the stars from your device.
 - **Use Online Image** – Get an image from the internet automatically.
 
