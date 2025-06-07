@@ -8,7 +8,6 @@
     <string name="image_content_desc">Annotated photo with detected stars</string>
 
 
-
     <string name="AboutTheApp">
 🌟 Welcome to the Star Detector App! 🌟
         \n
@@ -56,7 +55,6 @@
 https://github.com/liron02319/Star_Identifier_App
 
 </string>
-
 
 
 </resources>

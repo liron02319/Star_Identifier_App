@@ -18,7 +18,7 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
-/*
+
 public class MoreInformation extends AppCompatActivity {
 
 
@@ -27,7 +27,7 @@ public class MoreInformation extends AppCompatActivity {
     List<Star> stars = new ArrayList<>();
     StarsAdapter starsAdapter;
     Context context = this;
-    List<Star> starListAll = new ArrayList<>();
+    List<StarCamera> starListAll = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,13 +89,13 @@ public class MoreInformation extends AppCompatActivity {
         String ra = converter.coordinatesRa();
         SimbadRequestTask task = new SimbadRequestTask(ra, dec, new SimbadRequestTask.OnTaskCompleteListener() {
             @Override
-            public void onTaskComplete(List<Star> starList) {
+            public void onTaskComplete(List<StarCamera> starList) {
                 System.out.println(starList);
                 starListAll = starList;
                 rvStarsMore.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
                 starsAdapter = new StarsAdapter(context,starListAll);
                 rvStarsMore.setAdapter(starsAdapter);
-                for (Star starName1 :starList) {
+                for (StarCamera starName1 :starList) {
                     if (starName1.getName().contains("* alf")) {
                         SimbadNameStar task = new SimbadNameStar(starName1.getName(), new SimbadNameStar.OnTaskCompleteListener() {
                             @Override
@@ -122,4 +122,3 @@ public class MoreInformation extends AppCompatActivity {
 
 }
 
- */

@@ -127,7 +127,20 @@ public class Home2 extends AppCompatActivity {
         executorService = Executors.newSingleThreadExecutor();
         mainHandler = new Handler(Looper.getMainLooper());
 
-        btnCamera.setOnClickListener(v -> openCamera());
+
+
+        btnCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // Example: open another activity
+                Intent intent = new Intent(Home2.this, Home.class);
+                startActivity(intent);
+
+                // Or you can run a login check here
+            }
+        });
+
 
         btnGallery.setOnClickListener(v -> {
             // Stop and hide the video view when Gallery button is clicked

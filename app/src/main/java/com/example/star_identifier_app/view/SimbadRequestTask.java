@@ -24,11 +24,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-/*
+
 public class SimbadRequestTask extends AsyncTask<Void, Void, String> {
     private String latitude;
     private String longitude;
-    List<Star> starList = new ArrayList<>();
+    List<StarCamera> starList = new ArrayList<>();
     private OnTaskCompleteListener listener;
     public SimbadRequestTask(String latitude, String longitude, OnTaskCompleteListener listener) {
         this.latitude = latitude;
@@ -72,7 +72,7 @@ public class SimbadRequestTask extends AsyncTask<Void, Void, String> {
                             valueLat = extractValueFromLon(line);
                             valueLon = valueLon.trim();
                             valueLat = valueLat.trim();
-                            starList.add(new Star(valueName,valueLon,valueLat));
+                            starList.add(new StarCamera(valueName,valueLon,valueLat));
 
                         }
                         testLat = false;
@@ -157,7 +157,6 @@ public class SimbadRequestTask extends AsyncTask<Void, Void, String> {
     }
 
     public interface OnTaskCompleteListener {
-        void onTaskComplete(List<Star> starList);
+        void onTaskComplete(List<StarCamera> starList);
     }
 }
-*/

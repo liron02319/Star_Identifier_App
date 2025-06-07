@@ -17,12 +17,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-/*
+
 public class StarsAdapter extends RecyclerView.Adapter<StarsAdapter.StarsAdapterHolder>{
     Context context;
-    List<Star> Stars;
+    List<StarCamera> Stars;
 
-    public StarsAdapter(Context context, List<Star> stars) {
+    public StarsAdapter(Context context, List<StarCamera> stars) {
         this.context = context;
         this.Stars = stars;
     }
@@ -35,7 +35,7 @@ public class StarsAdapter extends RecyclerView.Adapter<StarsAdapter.StarsAdapter
 
     @Override
     public void onBindViewHolder(@NonNull StarsAdapter.StarsAdapterHolder holder, int position) {
-        Star Star = Stars.get(position);
+        StarCamera Star = Stars.get(position);
         holder.Star = Star;
         holder.tvStarName.setText(Star.getName());
         holder.tvStarClarity.setText("Ra "+Star.getRa());
@@ -50,7 +50,7 @@ public class StarsAdapter extends RecyclerView.Adapter<StarsAdapter.StarsAdapter
     }
 
     public class StarsAdapterHolder extends RecyclerView.ViewHolder {
-        Star Star;
+        StarCamera Star;
         TextView tvStarName, tvStarClarity, tvStarMore;
 
         LinearLayout cartStarMore;
@@ -66,4 +66,3 @@ public class StarsAdapter extends RecyclerView.Adapter<StarsAdapter.StarsAdapter
         }
     }
 }
- */

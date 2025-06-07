@@ -47,13 +47,13 @@ import android.widget.VideoView;
 
 import java.util.ArrayList;
 import java.util.List;
-/*
+
 public class Home extends AppCompatActivity {
 
     Button btnCamera, btnGallery;
     ImageView imStar;
     static Bitmap bitmap;
-    List<Star> starListAll = new ArrayList<>();
+    List<StarCamera> starListAll = new ArrayList<>();
     static String latitude;
     static String longitude;
     @Override
@@ -240,11 +240,11 @@ public class Home extends AppCompatActivity {
         String ra = converter.coordinatesRa();
         SimbadRequestTask task = new SimbadRequestTask(ra, dec, new SimbadRequestTask.OnTaskCompleteListener() {
             @Override
-            public void onTaskComplete(List<Star> starList) {
+            public void onTaskComplete(List<StarCamera> starList) {
                 System.out.println(starList);
                 circleStarsOnImage(imageView,starList);
                 starListAll = starList;
-                for (Star starName1 :starList) {
+                for (StarCamera starName1 :starList) {
                     if (starName1.getName().contains("* alf")) {
                         SimbadNameStar task = new SimbadNameStar(starName1.getName(), new SimbadNameStar.OnTaskCompleteListener() {
                             @Override
@@ -269,10 +269,10 @@ public class Home extends AppCompatActivity {
     }
 
 
-    private float calculateMaxRA(List<Star> starList) {
+    private float calculateMaxRA(List<StarCamera> starList) {
         float maxRA = Float.MIN_VALUE;
 
-        for (Star star : starList) {
+        for (StarCamera star : starList) {
             String ra = star.getRa();
 
             if (ra.split(" ").length == 3) {
@@ -289,10 +289,10 @@ public class Home extends AppCompatActivity {
         return maxRA;
     }
 
-    private float calculateMaxDEC(List<Star> starList) {
+    private float calculateMaxDEC(List<StarCamera> starList) {
         float maxDEC = Float.MIN_VALUE;
 
-        for (Star star : starList) {
+        for (StarCamera star : starList) {
             String dec = star.getDec();
             if (dec.split(" ").length == 3){
                 float decDegrees = convertToDecimalDegrees(dec);
@@ -318,7 +318,7 @@ public class Home extends AppCompatActivity {
         float decimalDegrees = degrees + (minutes / 60.0f) + (seconds / 3600.0f);
         return decimalDegrees;
     }
-    public void circleStarsOnImage(ImageView imageView, List<Star> starList) {
+    public void circleStarsOnImage(ImageView imageView, List<StarCamera> starList) {
         imageView.setDrawingCacheEnabled(true);
         imageView.buildDrawingCache();
         Bitmap bitmap = imageView.getDrawingCache();
@@ -331,7 +331,7 @@ public class Home extends AppCompatActivity {
         circlePaint.setStrokeWidth(3);
         float minRA = Float.MAX_VALUE;
         float minDEC = Float.MAX_VALUE;
-        for (Star star : starList) {
+        for (StarCamera star : starList) {
             String ra = star.getRa();
             String dec = star.getDec();
             if (ra.split(" ").length == 3 && dec.split(" ").length == 3) {
@@ -356,7 +356,7 @@ public class Home extends AppCompatActivity {
         float maxDEC = calculateMaxDEC(starList);
         float raRange = maxRA - minRA;
         float decRange = maxDEC - minDEC;
-        for (Star star : starList) {
+        for (StarCamera star : starList) {
             String starRA = star.getRa();
             String starDEC = star.getDec();
             if (starRA.split(" ").length == 3 && starDEC.split(" ").length == 3) {
@@ -389,4 +389,3 @@ public class Home extends AppCompatActivity {
 }
 
 
- */
