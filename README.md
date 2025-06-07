@@ -7,7 +7,17 @@
 # Star_Identifier_App   
 
 **Welcome to Star Identifier App Project !**  
-- In This project we developed an app that processes an input image and by using an astronomical catalog classifies the detected objects and returns an image with the names of the stars.  
+- In This project we developed an app that processes an input image and by using an astronomical catalog classifies the detected objects and returns an image with the names of the stars.
+
+## Table of Contents
+- [Background](#Background)
+- [Files In Project](#Files-In-Project)
+- [THE TASK](#THE-TASK)
+- [MORE INFO](#MORE-INFO)
+- [Google Colab notebook](#Google-Colab-notebook)
+- [Detection Example](#Detection-Example)
+- [Matching Imgs Example](#Matching-Imgs-Example)
+
 
 ![GIF3](https://i.imgflip.com/9wl1xg.gif)
 
@@ -76,9 +86,10 @@ After investigating the database only the information about the stars was taken 
 
 ## Screenshots
 
+![image](https://github.com/user-attachments/assets/f93045f5-c8ae-420e-b1f3-2a0f341d55d5)
+
+
 ![image](https://github.com/user-attachments/assets/ccae43c2-a09c-489e-b85e-4ba823b5a008)
-
-
 
 
 ![image](https://github.com/user-attachments/assets/6cff32f6-8283-47e6-b70e-bb423349a4f8)
