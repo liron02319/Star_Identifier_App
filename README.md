@@ -11,12 +11,14 @@
 
 ## Table of Contents
 - [Background](#Background)
-- [Files In Project](#Files-In-Project)
-- [THE TASK](#THE-TASK)
-- [MORE INFO](#MORE-INFO)
-- [Google Colab notebook](#Google-Colab-notebook)
-- [Detection Example](#Detection-Example)
-- [Matching Imgs Example](#Matching-Imgs-Example)
+- [What the App Does](#What-the-App-Does)
+- [How to Use](#How-to-Use)
+- [Database](#Database)
+- [Flask Server](#Flask-Server)
+- [Implementation](#Implementation)
+- [Screenshots](#Screenshots)
+- [Running Application](#Running-Application)
+  
 
 
 ![GIF3](https://i.imgflip.com/9wl1xg.gif)
@@ -24,7 +26,8 @@
 ![selfportrait_startracker_monikadeviat](https://github.com/user-attachments/assets/ab6035f8-fa22-40ba-8367-3668a1557ada)
 
 
-## 🌟 Welcome to the Star Identifier App! 🌟
+## Background
+**🌟 Welcome to the Star Identifier App! 🌟**
 - This app helps you identify stars in the night sky using an image of the stars. You can upload your own image or capture one from the internet — and we’ll do the rest!
 
 ## ✨ What the App Does:
@@ -75,6 +78,14 @@ Updated and changed continuously </br>
 After investigating the database only the information about the stars was taken and if the name of the star starts with "* alf" then the star has a more popular name then the other popular name is researched and the name is changed in the application. </br>
 
 ![image](https://github.com/user-attachments/assets/d636c8a1-6696-4fb6-8390-16afd7c02ed0)
+
+
+## Flask Server 
+- The Flask server in that project is a Python program that listens for HTTP requests from other programs (like a web browser or Android app) and responds to them.
+ Flask server using the Flask library in Python.
+***Click Here*** [here](https://github.com/liron02319/Star_Identifier_App-Server)
+
+
 
 ## Implementation
    
