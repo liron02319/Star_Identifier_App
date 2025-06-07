@@ -72,11 +72,11 @@
 
 
 ## Database
-The SIMBAD database was used </br>
+We Used SIMBAD Database </br>
 The database contains information about stars, astronomical objects and galaxy systems </br>
 The database contains more than 10 million stars </br>
 Updated and changed continuously </br>
-After investigating the database only the information about the stars was taken and if the name of the star starts with "* alf" then the star has a more popular name then the other popular name is researched and the name is changed in the application. </br>
+
 
 ![image](https://github.com/user-attachments/assets/d636c8a1-6696-4fb6-8390-16afd7c02ed0)
 
