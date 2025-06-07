@@ -83,7 +83,7 @@ After investigating the database only the information about the stars was taken 
 
 ## Flask Server 
 - The Flask server in that project is a Python program that listens for HTTP requests from other programs (like a web browser or Android app) and responds to them.
- Flask server using the Flask library in Python.
+ Flask server using the Flask library in Python.   
 ***Click Here*** [here](https://github.com/liron02319/Star_Identifier_App-Server)
 
 
