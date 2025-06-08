@@ -28,7 +28,8 @@
 
 ## Background
 **🌟 Welcome to the Star Identifier App! 🌟**
-- This app helps you identify stars in the night sky using an image of the stars. You can upload your own image or capture one from the internet — and we’ll do the rest!
+- This app helps you identify stars in the night sky using an image of the stars.
+- You can upload your own image or capture one from the internet — and we’ll do the rest!
 
 ## What the App Does:
 ✨
